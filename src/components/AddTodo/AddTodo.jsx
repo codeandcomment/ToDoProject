@@ -1,21 +1,14 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 
 const AddTodo = ({setTodoList}) =>{
 
-    const [todos,setTodo] = useState([]);
     const inputRef = useRef(null);
 
-    useEffect(()=>{
-
-        setTodoList(todos)
-
-    },[todos,setTodoList])
 
     function handleAddTodo(){
 
         const textVal = inputRef.current.value.trim();
-
-        setTodo((prevTodo)=>[...prevTodo,textVal]);
+        setTodoList((prevTodo)=>[...prevTodo,textVal]);
         inputRef.current.value=''
     }
 
