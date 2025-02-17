@@ -7,10 +7,14 @@ import TodoList from './components/TodoList/TodoList'
 function App() {
     const [todoList,setTodoList] = useState([]);
 
+    const deleteTodo = (index) => {
+      setTodoList((prevTodos) => prevTodos.filter((_, i) => i !== index));
+    };
+  
   return (
     <>
       <AddTodo  setTodoList={setTodoList}></AddTodo>
-     { todoList.length > 0 && <TodoList todoList={todoList}></TodoList>}
+     { todoList.length > 0 && <TodoList todoList={todoList} deleteTodo={deleteTodo}></TodoList>}
     </>
   )
 }

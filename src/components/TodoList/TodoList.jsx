@@ -1,4 +1,4 @@
- const TodoList = ({todoList}) =>{
+ const TodoList = ({todoList,deleteTodo }) =>{
     console.log(todoList);
 
     return(<div>
@@ -6,7 +6,7 @@
 
             <ul >
                 {todoList && todoList.map((todo,index)=>(
-                    <li  key={index}> {todo} </li>
+                    <li  key={index}> {todo} <button onClick={()=>deleteTodo(index)}>X</button></li>
                 ))}
             </ul>
         </div>)
