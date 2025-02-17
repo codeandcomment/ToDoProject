@@ -1,0 +1,31 @@
+.todo-list-div{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    background-color:rgba(110, 151, 139, 0.225);
+    margin-top: 30px;
+    padding-left: 20px;
+    border-radius: 5px;
+}
+
+.todo-list-ul{
+    
+}
+
+.todo-li{
+padding:5px;
+}
+
+.todo-delete{
+    margin-left: 20px;
+    border-radius: 15px;
+    border: none;
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+
+.todo-delete:hover{
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3); /* Adds a box-shadow on hover */
+    background-color: #54616a; /* Change background color on hover */
+}

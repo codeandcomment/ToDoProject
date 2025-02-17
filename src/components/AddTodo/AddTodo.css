@@ -1,0 +1,25 @@
+.add-todo{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.todo-text{
+padding: 5px;
+margin-right: 10px;
+}
+
+.todo-Button{
+    padding: 5px;
+    background: grey;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.todo-Button:hover {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3); /* Adds a box-shadow on hover */
+    background-color: #54616a; /* Change background color on hover */
+}
