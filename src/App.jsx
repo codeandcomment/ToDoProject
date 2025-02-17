@@ -12,10 +12,10 @@ function App() {
     };
   
   return (
-    <>
+    <div className='app-div'>
       <AddTodo  setTodoList={setTodoList}></AddTodo>
      { todoList.length > 0 && <TodoList todoList={todoList} deleteTodo={deleteTodo}></TodoList>}
-    </>
+    </div>
   )
 }
 
